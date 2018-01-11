@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MahappsFlyoutHeaderProblem"
         xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
-        SizeToContent="WidthAndHeight">
+        SizeToContent="WidthAndHeight" BorderThickness="1"
+                      BorderBrush="{DynamicResource AccentColorBrush}">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -42,6 +43,8 @@
         <CheckBox Content="{Binding Source={StaticResource Lang}, XPath=t3}" Margin="10"></CheckBox>
         <Button Content="{Binding Source={StaticResource Lang}, XPath=t4}" Margin="10"
                 Click="ButtonBase_OnClick"></Button>
+        <GroupBox Header="Without binding"></GroupBox>
+        <GroupBox Header="{Binding Source={StaticResource Lang}, XPath=t6}"></GroupBox>
     </StackPanel>
 </controls:MetroWindow>
 
