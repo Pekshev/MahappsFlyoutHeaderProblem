@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Res>
+  <t1>As you can see, the binding to the file works fine for text</t1>
+  <t2>and for buttons</t2>
+  <t3>and for other controls</t3>
+  <t4>But flyout's header...</t4>
+  <t5>My cool header text</t5>
+</Res>
